@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aquadive Nigeria Limited - Projects</title>
+  <meta name="description" content="Showcase of Aquadive Nigeria Limited's major commercial diving and marine projects across Nigeria." />
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .hero-bg {
+      background-image: linear-gradient(180deg, rgba(2,6,23,0.55), rgba(2,6,23,0.25)), url(/dive.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-800">
+
+  <!-- NAV -->
+  <header class="bg-white shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center gap-4">
+          <a href="/" class="flex items-center gap-2">
+            <img src="aquadive.png" alt="Aquadive Nigeria Limited logo" class="h-30 w-28 rounded-full object-cover"/>
+            <div>
+              <div class="text-lg font-semibold">Aquadive Nigeria Limited</div>
+              <div class="text-xs text-slate-500">Lagos Island, Lagos State</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="/index.html" class="hover:text-sky-600">Home</a>
+          <a href="/Services.html" class="hover:text-sky-600">Services</a>
+          <a href="/project.html" class="text-sky-600 font-semibold">Project</a>
+          <a href="/gallery.html" class="hover:text-sky-600">Gallery</a>
+          <button id="bookBtn" class="ml-2 inline-flex items-center gap-2 bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700">
+            Request a Call
+          </button>
+        </nav>
+
+        <!-- mobile menu -->
+        <div class="md:hidden">
+          <button id="mobileToggle" class="p-2 rounded-md hover:bg-slate-100">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden border-t">
+      <div class="px-4 pt-4 pb-6 space-y-3">
+        <a href="/index.html" class="block">Home</a>
+        <a href="/Services.html" class="block">Services</a>
+        <a href="/project.html" class="block text-sky-600 font-semibold">Project</a>
+        <a href="/gallery.html" class="block">Gallery</a>
+        <button id="bookBtnMobile" class="w-full mt-2 bg-sky-600 text-white px-4 py-2 rounded-lg">Request a Call</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-[40vh] flex items-center justify-center text-center">
+    <h1 class="text-4xl font-bold text-white drop-shadow">Our Major Projects</h1>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="py-16 max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-sky-800 mb-10">Completed & Ongoing Projects</h2>
+    <p class="text-center max-w-3xl mx-auto text-slate-600 mb-12">
+      We take pride in delivering safe, reliable, and efficient diving operations for offshore, shipping, and marine clients across Nigeria.
+    </p>
+
+    <!-- Project cards -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="underwater welding.jpg" alt="Underwater Welding" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-sky-700">Subsea Welding & Repair</h3>
+          <p class="text-slate-600 mt-2">Performed critical underwater welding on offshore rigs ensuring safety and structural stability for oil & gas operations.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="hull cleaning.jpg" alt="Hull Cleaning" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-sky-700">Ship Hull Cleaning</h3>
+          <p class="text-slate-600 mt-2">Delivered complete hull cleaning for international vessels docking in Lagos, improving fuel efficiency and performance.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="marine salvage.jpeg" alt="Marine Salvage" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-sky-700">Marine Salvage</h3>
+          <p class="text-slate-600 mt-2">Led salvage operations for sunken barges and vessels, ensuring environmental safety and recovery of assets.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="bridge inspection.jpeg" alt="Bridge Inspection" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-sky-700">Bridge & Jetty Inspection</h3>
+          <p class="text-slate-600 mt-2">Conducted underwater inspections of critical infrastructure ensuring safety for bridges and jetty foundations.</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="rig support.jpeg" alt="Rig Support" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-sky-700">Offshore Rig Support</h3>
+          <p class="text-slate-600 mt-2">Provided full subsea support for offshore rigs including inspection, maintenance, and emergency response.</p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="pipeline welding.jpeg" alt="Pipeline Welding" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold text-sky-700">Pipeline Welding</h3>
+          <p class="text-slate-600 mt-2">Specialized in underwater pipeline welding and repair projects critical for oil & gas transportation systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-sky-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="font-bold text-lg mb-4">Aquadive Nigeria Limited</h3>
+        <p class="text-gray-300">Providing professional commercial diving services with safety, reliability, and efficiency for marine and offshore operations across Nigeria.</p>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="/Home.html" class="hover:text-white">Home</a></li>
+          <li><a href="/Services.html" class="hover:text-white">Services</a></li>
+          <li><a href="/project.html" class="hover:text-white">Project</a></li>
+          <li><a href="/gallery.html" class="hover:text-white">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Core Services</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li>Underwater Inspection</li>
+          <li>Hull Cleaning & Maintenance</li>
+          <li>Subsea Welding & Cutting</li>
+          <li>Marine Salvage & Recovery</li>
+          <li>Emergency Diving</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold text-lg mb-4">Contact Us</h3>
+        <p class="text-gray-300"><i class="fas fa-phone-alt mr-2"></i>+234 803 153 4002</p>
+        <p class="text-gray-300"><i class="fas fa-envelope mr-2"></i>Aquadive02@gmail.com</p>
+        <p class="text-gray-300"><i class="fas fa-map-marker-alt mr-2"></i>Lagos, Nigeria</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/2348031534002" target="_blank" class="text-gray-300 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-gray-400 mt-10 border-t border-gray-700 pt-6">
+      <p>&copy; 2025 Aquadive Nigeria Limited. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div id="bookingModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+    <div class="bg-white rounded-2xl p-6 w-full max-w-2xl mx-4">
+      <div class="flex justify-between items-center">
+        <h3 class="text-lg font-semibold">Request a Call</h3>
+        <button id="closeModal" class="text-slate-500">Close</button>
+      </div>
+      <form id="bookingForm" class="mt-4 grid grid-cols-1 gap-3">
+        <input required class="w-full border rounded-md px-3 py-2" id="name" placeholder="Full name" />
+        <input required class="w-full border rounded-md px-3 py-2" id="email" placeholder="Email" type="email" />
+        <input required class="w-full border rounded-md px-3 py-2" id="phone" placeholder="Phone" />
+        <select id="model" class="w-full border rounded-md px-3 py-2">
+          <option>Inspection Enquiry</option>
+          <option>Repair Service</option>
+          <option>Construction Support</option>
+          <option>Emergency Response</option>
+        </select>
+        <div class="text-sm text-slate-600">You will be contacted within 24 hours.</div>
+        <div class="flex justify-end gap-2 mt-2">
+          <button type="button" id="cancelBooking" class="px-3 py-2 rounded-md border">Cancel</button>
+          <button type="submit" class="px-4 py-2 rounded-md bg-sky-600 text-white">Send Request</button>
+          <button type="button" onclick="sendWhatsApp()" class="px-4 py-2 rounded-md bg-green-500 text-white flex items-center gap-2">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+    // Mobile nav toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    mobileToggle?.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+
+    // Booking modal
+    const bookingModal = document.getElementById('bookingModal');
+    const bookBtn = document.getElementById('bookBtn');
+    const bookBtnMobile = document.getElementById('bookBtnMobile');
+    const closeModal = document.getElementById('closeModal');
+    const cancelBooking = document.getElementById('cancelBooking');
+    [bookBtn, bookBtnMobile].forEach(el => el?.addEventListener('click', () => bookingModal.classList.remove('hidden')));
+    [closeModal, cancelBooking].forEach(el => el?.addEventListener('click', () => bookingModal.classList.add('hidden')));
+
+    document.getElementById('bookingForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Request sent! We will confirm via email.');
+      bookingModal.classList.add('hidden');
+      e.target.reset();
+    });
+
+    function sendWhatsApp() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const model = document.getElementById('model').value;
+      const businessNumber = "2348031534002";
+      const msg = `Hello, my name is ${name}. My phone is ${phone}. I would like to enquire about: ${model}`;
+      const url = `https://wa.me/${businessNumber}?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+</body>
+</html>
